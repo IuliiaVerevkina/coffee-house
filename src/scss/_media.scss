@@ -1,0 +1,105 @@
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+      .content {
+            .rectangular-strip {
+                  margin: 40px auto;
+            }
+      }
+      .panel__filter {
+            margin-bottom: 30px;
+            .filtration__wrapper {
+                  align-items: flex-start;
+                  flex-direction: column;
+                  gap: 25px;
+            }
+      }
+      .shop__content {
+            .coffee__list {
+                  grid-template-columns: repeat(3, minmax(0px, 1fr));
+            }
+      }
+}
+@media screen and (max-width: 768px) {
+      .header {
+            margin-bottom: 30px;
+            nav {
+                  ul {
+                        justify-content: center;
+                        gap: 25px;
+                  }
+            }
+            h1 {
+                  font-size: 20px;
+            }
+      }
+      .content {
+            &-block {
+                  flex-direction: column;
+                  align-items: center;
+                  .text-content {
+                        padding: 20px 20px 0 20px;
+                        img {
+                              margin-bottom: 10px;
+                        }
+                  }
+            }
+            .rectangular-strip {
+                  margin: 20px auto;
+            }
+      }
+      .panel__filter {
+            .filtration__wrapper {
+                  .filter {
+                        gap: 10px;
+                  }
+            }
+      }
+      .shop__content {
+            .coffee__list {
+                  grid-template-columns: repeat(2, minmax(0px, 1fr));
+            }
+      }
+}
+@media screen and (max-width: 576px) {
+      .header {
+            padding: 10px;
+            nav {
+                  ul {
+                        gap: 15px;
+                        justify-content: space-between;
+                        li {
+                              img {
+                                    width: 100%;
+                              }
+                        }
+                        a {
+                              font-size: 10px;
+                        }
+                  }
+            }
+            h1 {
+                  font-size: 16px;
+            }
+      }
+      .shop__content {
+            .coffee__list {
+                  grid-template-columns: repeat(1, minmax(0px, 1fr));
+            }
+      }
+      .content {
+            &-block {
+			&>img {
+				height: 150px;
+			}
+		}
+      }
+      .panel__filter {
+            .filtration__wrapper {
+                  .filter {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                  }
+            }
+      }
+}
